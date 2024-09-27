@@ -1,0 +1,98 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+	--clr-primary-1: #c59d5f;
+	--clr-white: #fff;
+	--clr-red-dark: hsl(360, 67%, 44%);
+	--clr-red-light: hsl(360, 71%, 66%);
+	--clr-green-dark: hsl(125, 67%, 44%);
+	--clr-green-light: hsl(125, 71%, 66%);
+	--clr-black: #222;
+	--transition: all 0.3s linear;
+	--spacing: 0.1rem;
+	--radius: 0.25rem;
+	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	--max-width: 1170px;
+	--fixed-width: 620px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+.memberCard {
+	background: var(--clr-white);
+	padding: 1.5rem 2rem;
+	border-radius: var(--radius);
+	box-shadow: var(--light-shadow);
+	transition: var(--transition);
+	text-align: center;
+}
+.memberCard:hover {
+	box-shadow: var(--dark-shadow);
+}
+.img-container {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 1.5rem;
+}
+
+.smaller-img-container {
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+}
+
+.person-img {
+	width: 100%;
+	display: block;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	position: relative;
+}
+.quote-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	transform: translateY(25%);
+	background: var(--clr-primary-5);
+	color: var(--clr-white);
+}
+.img-container::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: var(--clr-primary-1);
+	position: absolute;
+	top: -0.25rem;
+	right: -0.5rem;
+	border-radius: 50%;
+}
+.author {
+	margin-bottom: 0.25rem;
+}
+.job {
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	color: var(--clr-primary-1);
+	font-size: 1rem;
+	font-weight: 600;
+}
+.info {
+	margin-bottom: 0.75rem;
+}

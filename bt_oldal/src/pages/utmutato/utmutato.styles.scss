@@ -1,0 +1,72 @@
+.spiritualPageContainer {
+    margin: 6rem 0 3rem 0;
+    padding: 0 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.spiritual-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.spiritual-image {
+    width: 70%;
+    height: auto;
+}
+
+.spiritual-archive {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+
+    & h2 {
+        padding: 3rem 0 1rem 5rem;
+        color: var(--clr-primary);
+        text-shadow: 1px 1.5px 1.5px #000000;
+    }
+
+    & p {
+        padding: 1rem 0 1rem 5rem;
+    }
+}
+
+.monthly-spiritualContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 1rem 2.5rem;
+
+    & a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+}
+
+
+
+.month-wrapper-style {
+    width: 18rem;
+    height: 2.3rem;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-primary);
+    border-radius: var(--radius);
+}
+
+.month-wrapper-style:hover {
+    background-color: whitesmoke;
+ & a {
+    color: var(--clr-primary);
+    font-weight: 600;
+  }
+}

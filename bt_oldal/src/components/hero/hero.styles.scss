@@ -1,0 +1,120 @@
+// Create three grid areas (boxes) that overlap each other, essentially creating three layers.
+// Grid box 1 (layer 1): Image
+// Grid box 2 (layer 2): Gradient overlay
+// Grid box 3 (layer 3): Call to action text/content
+.top-banner-section {
+	display: grid;
+	grid-template-columns: 1fr; // stretch to the full frame
+	grid-template-rows: 25rem; // 350 pixels tall
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	align-content: center;
+	justify-content: center;
+
+	.banner-image-div {
+		grid-area: 1 / 1 / 2 / 2;
+	} // image
+	.banner-overlay-div {
+		grid-area: 1 / 1 / 2 / 2;
+	} // gradient or other overlay
+	.banner-text-div {
+		grid-area: 1 / 1 / 2 / 2;
+	}
+}
+// Banner image (layer 1)
+.banner-image {
+	display: grid;
+	min-width: 350px; // Do not resize to smaller than this.
+	width: 100%;
+	height: 100%;
+	object-fit: cover; // Using this so the image can be any size and still look halfway decent.
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+	filter: sepia(50%);
+}
+
+.color-banner {
+	margin-top: -9rem;
+	width: 100%;
+	height: 10rem;
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 31%);
+	background-color: #c59d5f;
+}
+// Gradient overlay (layer 2)
+// gradient overlay going from black to transparent.
+// note: search for a gradient overlay generator to make this easier.
+.banner-overlay-div {
+	display: grid;
+	max-width: 100%;
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+// banner text
+.banner-text-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: -1rem auto 2rem auto;
+	padding: 0 5rem;
+	@media screen and (max-width: 760px) {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		padding: 0 1rem;
+	}
+	@media (min-width: 760px) and (max-width: 1200px) {
+		margin-top: 2rem;
+	}
+}
+
+.heroTitle {
+	// font can get larger, but no smaller than 10 points.
+	font-size: 2rem;
+	font-family: "Playfair Display", serif;
+	letter-spacing: 5px;
+	text-shadow: 1px 2px 2px #000000;
+	color: #c59d5f;
+	font-weight: bolder;
+	text-transform: uppercase;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+
+	@media screen and (max-width: 480px) {
+		font-size: 1.2rem;
+		margin: -2rem auto 0 auto;
+		padding: 0;
+	}
+
+	@media (min-width: 480px) and (max-width: 768px) {
+		font-size: 1.5rem;
+		padding: 0;
+		margin: -2rem auto 1.5rem auto;
+		text-align: center;
+		line-height: 2rem;
+	}
+	@media (min-width: 768px) and (max-width: 1100px) {
+		font-size: 2rem;
+		padding: 0;
+		margin: -2rem auto 1.5rem auto;
+		text-align: center;
+		line-height: 2.5rem;
+	}
+}
+
+.bibleVerse {
+	line-height: 1.2;
+	letter-spacing: 1.5px;
+	font-size: 1rem;
+	text-align: center;
+	@media screen and (max-width: 480px) {
+		margin-top: 1rem;
+
+		font-size: 0.8rem;
+	}
+
+	@media (min-width: 480px) and (max-width: 768px) {
+		font-size: 1rem;
+		margin-top: 1rem;
+		padding: 0;
+	}
+}

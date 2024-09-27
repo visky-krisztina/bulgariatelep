@@ -1,0 +1,24 @@
+.modal {
+	position: fixed; /* Make sure the modal overlays the entire screen */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Add some transparency for the backdrop */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999; /* Ensure it's above other elements */
+
+	label {
+		color: black;
+	}
+}
+
+.modal-content {
+	background-color: #fff;
+	padding: 2rem;
+	border-radius: 10px;
+	z-index: 10000; /* Ensure content is above the modal background */
+	position: relative;
+}

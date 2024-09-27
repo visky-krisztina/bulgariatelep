@@ -1,0 +1,167 @@
+.card-box {
+	background: whitesmoke;
+	width: 26rem;
+	height: 14rem;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+	margin: 1rem;
+}
+
+.styleMarginUp {
+	margin-top: -5rem;
+}
+
+.styleMarginUpper {
+	margin-top: -8rem;
+}
+
+.logo-container {
+	width: 6rem;
+	display: block;
+	border-bottom: 2px solid #c59d5f;
+}
+
+.logo-img {
+	width: 4.5rem;
+	padding: 1rem 0 0.5rem 0;
+	margin: auto;
+	display: block;
+	@media (min-width: 768px) and (max-width: 992px) {
+		width: 3.5rem;
+	}
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 0.5rem;
+}
+
+.title-style {
+	text-decoration: none;
+	font-size: 2rem;
+	color: black;
+	text-shadow: 1px 1.5px 2px #0c0c0c;
+}
+
+.title-style:hover {
+	text-decoration: none;
+	color: #294416;
+	font-weight: 900;
+	-o-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+#card-text {
+	padding: 0.5rem 0.7rem 0.6rem 0.7rem;
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+	.card-box {
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+	.styleMarginUp {
+		margin-top: 1rem;
+	}
+
+	.styleMarginUpper {
+		margin-top: 1rem;
+	}
+	.logo-img {
+		width: 2rem;
+		padding: 0.5rem 0;
+	}
+	.title-style {
+		font-size: 1.2rem;
+		text-shadow: 1px 1px 2px #0c0c0c;
+	}
+	#card-text {
+		padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+		text-align: center;
+		font-size: 0.8rem;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 700px) {
+	.card-box {
+		width: 90%;
+		height: auto;
+		margin: 0.8rem 0;
+	}
+	.styleMarginUp {
+		margin-top: 0;
+	}
+
+	.styleMarginUpper {
+		margin-top: 0;
+	}
+	.logo-container {
+		width: 3rem;
+	}
+
+	.logo-img {
+		width: 2.5rem;
+		padding: 0.5rem 0;
+	}
+	.title-style {
+		font-size: 1rem;
+		text-shadow: 1px 1px 2px #0c0c0c;
+	}
+	#card-text {
+		padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+		text-align: center;
+		font-size: 0.8rem;
+	}
+}
+
+@media (min-width: 700px) and (max-width: 992px) {
+	.card-box {
+		width: 20rem;
+		height: 11rem;
+		// margin: 0 0.8rem 1rem 0;
+	}
+	.styleMarginUp {
+		margin-top: 0;
+	}
+
+	.styleMarginUpper {
+		margin-top: 0;
+	}
+	.logo-container {
+		width: 5rem;
+		display: block;
+	}
+
+	.logo-img {
+		width: 2.5rem;
+		padding: 0.5rem 0;
+		margin: auto;
+		display: block;
+	}
+
+	.text-container {
+		padding-top: 0.2rem;
+		padding: 0.2rem 0.3rem 0 0.2rem;
+	}
+
+	.title-style {
+		font-size: 1.4rem;
+	}
+	#card-text {
+		padding: 0.4rem 0.6rem 0.7rem 0.6rem;
+		text-align: center;
+		font-size: 0.9rem;
+	}
+}

@@ -1,0 +1,153 @@
+.sectionBInfo {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 30rem;
+	padding: 0 6rem;
+	background-color: white;
+
+	@media screen and (max-width: 996px) {
+		flex-direction: column;
+		height: auto;
+		padding: 0 2rem;
+	}
+
+	@media (min-width: 996px) and (max-width: 1200px) {
+		padding: 0 2rem;
+	}
+	@media (min-width: 1200px) and (max-width: 1400px) {
+		padding: 0 2rem;
+	}
+}
+
+.sectionB-buttonStyle {
+	margin: 1rem auto;
+}
+
+.left {
+	flex-direction: row-reverse;
+	@media screen and (max-width: 996px) {
+		flex-direction: column;
+	}
+}
+.sectionBImage {
+	width: 50%;
+	height: 100%;
+	position: relative;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		z-index: 1;
+		@media screen and (max-width: 996px) {
+			display: none;
+		}
+	}
+}
+
+.paragraphsSectionB {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: auto;
+
+	& p {
+		text-align: justify;
+		padding-top: 1rem;
+	}
+	@media screen and (max-width: 996px) {
+		width: 100%;
+		padding: 1rem;
+		& p {
+			padding-top: 0.5rem;
+		}
+	}
+}
+
+.paragraphsSectionB-left {
+	padding: 2rem 0 2rem 2rem;
+	@media screen and (max-width: 996px) {
+		padding: 1rem 0 1rem 0;
+	}
+
+	@media (min-width: 996px) and (max-width: 1200px) {
+		padding: 1rem 0 1rem 1.5rem;
+
+		.centerTitle {
+			margin: 0.5rem 0 0 0;
+		}
+
+		p {
+			font-size: 0.9rem;
+		}
+	}
+
+	@media (min-width: 1200px) and (max-width: 1400px) {
+		.centerTitle {
+			margin: 0.5rem 0 0.5rem 0;
+		}
+
+		p {
+			font-size: 0.95rem;
+		}
+	}
+}
+
+.paragraphsSectionB-right {
+	padding: 2rem 2rem 2rem 0;
+	@media screen and (max-width: 996px) {
+		padding: 1rem 0 1rem 0;
+	}
+	@media (min-width: 996px) and (max-width: 1200px) {
+		padding: 1rem 1.5rem 1rem 0;
+
+		.centerTitle {
+			margin: 0.5rem 0 0 0;
+		}
+
+		p {
+			font-size: 0.9rem;
+		}
+	}
+
+	@media (min-width: 1200px) and (max-width: 1400px) {
+		.centerTitle {
+			margin: 0.5rem 0 0.5rem 0;
+		}
+
+		p {
+			font-size: 0.95rem;
+		}
+	}
+}
+
+.img-styles-box-left {
+	width: 20rem;
+	height: 20rem;
+	background-color: #c59d5f;
+	padding-left: 2rem;
+	position: absolute;
+	top: 10.5rem;
+	left: -0.5rem;
+	@media screen and (max-width: 996px) {
+		display: none;
+	}
+}
+
+.img-styles-box-right {
+	width: 20rem;
+	height: 20rem;
+	background-color: #c59d5f;
+	padding-left: 2rem;
+	position: absolute;
+	top: 10.5rem;
+	right: -0.5rem;
+	@media screen and (max-width: 996px) {
+		display: none;
+	}
+}

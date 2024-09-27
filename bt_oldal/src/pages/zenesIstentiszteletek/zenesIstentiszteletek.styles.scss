@@ -1,0 +1,46 @@
+:root {
+	/* primary/main color */
+	--clr-primary: #c59d5f;
+	--clr-white: #fff;
+	--clr-black: #222;
+	--transition: all 0.3s linear;
+	--spacing: 0.1rem;
+	--radius: 0.25rem;
+	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.teamContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.teamSection {
+	display: flex;
+	flex-direction: column;
+	padding: 3rem 0;
+}
+
+.theSingers {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.memberSegment {
+	width: 14rem;
+	height: 16rem;
+
+	padding: 1.5rem 2rem;
+	transition: var(--transition);
+}
+
+.otherJobs {
+	display: flex;
+	padding: 2rem 0 0.5rem 0;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}

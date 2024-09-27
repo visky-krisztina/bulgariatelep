@@ -1,0 +1,20 @@
+.img-wrapper {
+    width: 100%;
+    height: auto;
+
+    @media screen and (max-width: 760px) {
+        width: 100%;
+    }
+}
+.text {
+    width: 40%;
+}
+
+.img-wrapper img {
+    border: 3px solid whitesmoke;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+

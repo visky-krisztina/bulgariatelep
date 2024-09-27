@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8f717e79.chunk.css",
+    "main.js": "/static/js/main.0ccb35b4.chunk.js",
+    "main.js.map": "/static/js/main.0ccb35b4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d7253da9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d7253da9.js.map",
+    "static/js/2.dc65910b.chunk.js": "/static/js/2.dc65910b.chunk.js",
+    "static/js/2.dc65910b.chunk.js.map": "/static/js/2.dc65910b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8f717e79.chunk.css.map": "/static/css/main.8f717e79.chunk.css.map",
+    "static/js/2.dc65910b.chunk.js.LICENSE.txt": "/static/js/2.dc65910b.chunk.js.LICENSE.txt",
+    "static/media/2022Nov_Dec.fa620f1b.jpg": "/static/media/2022Nov_Dec.fa620f1b.jpg",
+    "static/media/Denes.d30f1c98.jpg": "/static/media/Denes.d30f1c98.jpg",
+    "static/media/Emo.b9095c73.jpg": "/static/media/Emo.b9095c73.jpg",
+    "static/media/Eszter.e5eae6c3.JPG": "/static/media/Eszter.e5eae6c3.JPG",
+    "static/media/ImageOne.7c4f761e.jpg": "/static/media/ImageOne.7c4f761e.jpg",
+    "static/media/Istvan.a6ef1ddf.JPG": "/static/media/Istvan.a6ef1ddf.JPG",
+    "static/media/Krisz.2aacce3e.jpg": "/static/media/Krisz.2aacce3e.jpg",
+    "static/media/Maruszia.3260d5cf.jpg": "/static/media/Maruszia.3260d5cf.jpg",
+    "static/media/Meli.09d1fce4.jpg": "/static/media/Meli.09d1fce4.jpg",
+    "static/media/Tibi.b24c33f1.jpg": "/static/media/Tibi.b24c33f1.jpg",
+    "static/media/terkep.2e75972e.jpg": "/static/media/terkep.2e75972e.jpg",
+    "static/media/test.93d2c31f.png": "/static/media/test.93d2c31f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7253da9.js",
+    "static/js/2.dc65910b.chunk.js",
+    "static/css/main.8f717e79.chunk.css",
+    "static/js/main.0ccb35b4.chunk.js"
+  ]
+}

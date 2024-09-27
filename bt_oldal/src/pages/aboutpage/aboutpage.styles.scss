@@ -1,0 +1,55 @@
+.aboutpageContainer {
+	margin: 2rem 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.historyContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	margin-top: 2rem;
+	padding: 0 6rem;
+
+	& h1 {
+		padding-top: 1rem;
+	}
+
+	@media screen and (max-width: 760px) {
+		margin: 0;
+		padding: 0 1rem;
+		& h1 {
+			padding-top: 0.7rem;
+		}
+	}
+}
+
+.historyContent {
+	padding: 1rem 3rem;
+	line-height: 1.5rem;
+	font-size: 1.2rem;
+	@media screen and (max-width: 480px) {
+		padding: 0.5rem;
+		font-size: 0.9rem;
+	}
+	@media (min-width: 480px) and (max-width: 760px) {
+		padding: 1rem;
+	}
+}
+
+.indentation {
+	text-indent: 5%;
+}
+
+.border {
+	padding: 1rem;
+	border: 0.2rem solid;
+	border-color: #c59d5f;
+	border-radius: 2rem;
+	@media screen and (max-width: 760px) {
+		padding: 0.3rem;
+	}
+}

@@ -1,0 +1,23 @@
+.bankDetailsContainer {
+	padding: 0 4rem;
+	width: 70%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 0 auto;
+	text-align: center;
+	@media screen and (max-width: 760px) {
+		padding: 0 0.5rem;
+		p:last-child {
+			font-size: 1rem;
+		}
+	}
+	@media (min-width: 760px) and (max-width: 1200px) {
+		padding: 0 4rem;
+	}
+
+	p:last-child {
+		font-size: 1.3rem;
+	}
+}

@@ -1,0 +1,164 @@
+.heroSection {
+	height: 100vh;
+	max-height: 90%;
+	overflow: hidden;
+}
+
+.heroWrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.heroSlide {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.heroSlider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.heroImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	opacity: 0.8;
+	filter: sepia(40%);
+	z-index: 1;
+
+	@media screen and (max-width: 760px) {
+		background-size: cover;
+		width: 100%;
+	}
+}
+
+.heroContent {
+	z-index: 11;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 27rem;
+	height: 6rem;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 1rem;
+	padding: 0.5rem;
+	margin-top: 6rem;
+
+	h1 {
+		font-size: 2rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+		padding-bottom: 0.5rem;
+	}
+
+	p {
+		text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+		font-size: 1.4rem;
+		text-align: center;
+	}
+}
+
+.sliderButtons {
+	position: absolute;
+	bottom: 13rem;
+	right: 2rem;
+	display: flex;
+	z-index: 10;
+}
+
+.arrowButtons {
+	width: 2rem;
+	height: 2rem;
+	color: #fff;
+	cursor: pointer;
+	background: #000d1a;
+	border-radius: 50px;
+	padding: 10px;
+	margin-right: 1rem;
+	user-select: none;
+	transition: 0.3s;
+
+	&:hover {
+		background: #cd853f;
+		transform: scale(1.05);
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.heroContent {
+		width: 85%;
+		padding: 0.5rem;
+		height: auto;
+
+		h1 {
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+	}
+}
+
+/* For medium screens (min-width: 760px and max-width: 992px) */
+@media (min-width: 650px) and (max-width: 992px) {
+	.heroContent {
+		width: 75%;
+		height: auto;
+		h1 {
+			font-size: 1.6rem;
+		}
+		p {
+			font-size: 1.3rem;
+		}
+	}
+}
+
+/* For large screens (min-width: 992px and max-width: 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+	.heroContent {
+		width: 70%;
+		padding: 0.3rem;
+		height: auto;
+		bottom: 4rem; /* More bottom spacing */
+		h1 {
+			font-size: 1.7rem;
+		}
+		p {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+/* For extra large screens (min-width: 1200px and max-width: 1920px) */
+@media (min-width: 1200px) and (max-width: 1920px) {
+	.heroContent {
+		width: 60%;
+		bottom: 5rem;
+		height: auto;
+		h1 {
+			font-size: 2rem;
+		}
+		p {
+			font-size: 1.4rem;
+		}
+	}
+}

@@ -1,0 +1,179 @@
+.contactContainer {
+	padding: 0 3rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@media screen and (max-width: 480px) {
+		margin-top: 0;
+		padding: 0 1rem;
+	}
+	@media (min-width: 1200px) and (max-width: 1920px) {
+		padding: 0 2rem;
+	}
+}
+
+.addressContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@media screen and (max-width: 480px) {
+		margin-top: 0;
+		padding: 0;
+	}
+}
+
+.contact-person {
+	padding: 2rem 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	@media screen and (max-width: 786px) {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		align-items: center;
+	}
+	@media (min-width: 786px) and (max-width: 1200px) {
+		flex-wrap: wrap;
+		padding: 0.5rem;
+	}
+
+	@media (min-width: 1200px) and (max-width: 1920px) {
+		padding: 0.4rem;
+	}
+}
+
+.memberContainer {
+	width: 25rem;
+	height: 13rem;
+	@media screen and (max-width: 760px) {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		margin-bottom: 1rem;
+	}
+	@media (min-width: 760px) and (max-width: 1200px) {
+		width: 22rem;
+		height: 11rem;
+		margin-bottom: 12rem;
+	}
+	@media (min-width: 1200px) and (max-width: 1920px) {
+		width: 23rem;
+		height: 13rem;
+	}
+}
+
+.otherContactDetails {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 5rem;
+	margin: 10rem 0 5rem 0;
+	line-height: 1.5rem;
+	font-size: 1.2rem;
+	text-align: center;
+	@media screen and (max-width: 480px) {
+		padding: 0 1.5rem;
+		margin: 0.5rem 0 2rem 0;
+		font-size: 1rem;
+	}
+
+	@media (min-width: 480px) and (max-width: 760px) {
+		padding: 0 3rem;
+		margin: 1rem 0 2rem 0;
+	}
+	@media (min-width: 760px) and (max-width: 1200px) {
+		margin-top: 1rem;
+	}
+	@media (min-width: 1200px) {
+		padding: 0 10rem;
+	}
+}
+
+.bold {
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	@media screen and (max-width: 480px) {
+		font-size: 1rem;
+	}
+}
+
+.address-info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0.8rem 0 1.2rem 0;
+	@media screen and (max-width: 480px) {
+		flex-direction: column;
+		margin: 0 0 1.2rem 0;
+	}
+	@media (min-width: 480px) and (max-width: 760px) {
+		flex-direction: column;
+	}
+}
+
+.address {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 1.2rem;
+	@media screen and (max-width: 480px) {
+		line-height: 1.5rem;
+	}
+	@media (min-width: 480px) and (max-width: 760px) {
+		font-size: 0.9rem;
+	}
+}
+
+.address h1 {
+	font-size: 1.3rem;
+}
+
+.address > div {
+	margin-top: 1rem;
+	@media screen and (max-width: 760px) {
+		margin-top: 0.5rem;
+	}
+}
+
+.map-img {
+	width: 80%;
+	height: auto;
+	margin: 1rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media screen and (max-width: 480px) {
+		margin: 0.5rem 0 1rem 0;
+		flex-direction: column;
+		width: 80%;
+	}
+	@media (min-width: 480px) and (max-width: 992px) {
+		flex-direction: column;
+		width: 80%;
+	}
+	@media (max-width: 1200px) {
+		width: 100%;
+	}
+}
+
+.map-img img {
+	width: 100%; /* The image will scale to fit the div */
+	height: auto; /* Maintain the image's aspect ratio */
+	object-fit: contain;
+}
+
+#megkozelites {
+	margin: 1rem 0;
+	padding: 0 2rem;
+	@media screen and (max-width: 760px) {
+		padding: 0 1rem;
+	}
+}

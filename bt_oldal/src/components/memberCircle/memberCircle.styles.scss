@@ -1,0 +1,12 @@
+:root {
+    --clr-primary-1:#c59d5f;
+}  
+
+.memberCircle {
+    text-align: center;
+    
+& p {
+    font-size: 0.9rem;
+    font-weight: 500;  
+}
+}

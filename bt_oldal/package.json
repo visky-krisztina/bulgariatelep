@@ -1,0 +1,54 @@
+{
+	"name": "bt_oldal",
+	"proxy": "http://127.0.0.1:8000",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.36",
+		"@fortawesome/free-brands-svg-icons": "^5.15.3",
+		"@fortawesome/free-solid-svg-icons": "^5.15.4",
+		"@fortawesome/react-fontawesome": "^0.1.15",
+		"@tanstack/react-query": "^4.29.5",
+		"@tanstack/react-query-devtools": "^4.29.6",
+		"@testing-library/jest-dom": "^5.11.4",
+		"@testing-library/react": "^11.1.0",
+		"@testing-library/user-event": "^12.1.10",
+		"axios": "^1.7.5",
+		"dayjs": "^1.11.7",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-icons": "^4.8.0",
+		"react-player": "^2.9.0",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "^4.0.3",
+		"react-toastify": "^9.1.2",
+		"recharts": "^2.5.0",
+		"sass": "^1.43.4",
+		"styled-components": "^6.1.13",
+		"web-vitals": "^1.0.1"
+	},
+	"scripts": {
+		"start": "react-scripts --openssl-legacy-provider start",
+		"build": "react-scripts --openssl-legacy-provider build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}
