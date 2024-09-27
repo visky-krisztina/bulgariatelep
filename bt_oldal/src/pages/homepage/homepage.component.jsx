@@ -54,7 +54,7 @@ function HomePage() {
 							title={item.headline}
 							subTitle={item.p1}
 							src={item.image}
-							alt={item.headline}
+							alt={item.to}
 							styleMargin={item.cName}
 						/>
 					) : null;
